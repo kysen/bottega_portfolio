@@ -4,7 +4,10 @@
 
   .portfolio-item-wrapper {
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
     .portfolio-img-background {
       background-size: cover;
       background-position: center;
@@ -22,8 +25,6 @@
       align-items: center;
       height: 100%;
       text-align: center;
-      padding-left: 100px;
-      padding-right: 100px;
 
       .subtitle {
         transition: 1s ease-in-out;
@@ -31,14 +32,17 @@
       }
     }
 
-    .img-text-wrapper:hover .subtitle {
+    &:hover .subtitle {
       color: $teal;
       font-weight: 400;
     }
 
-    .logo-wrapper img {
-      width: 50%;
+    .logo-wrapper {
       margin-bottom: 20px;
+      img{
+        width: 60%;
+
+      }
     }
   }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
+
 
 export default class PortfolioDetail extends Component {
   constructor(props) {
@@ -68,6 +70,9 @@ export default class PortfolioDetail extends Component {
           <a href={url} className="site-link" target="_blank">
             Visit {name}
           </a>
+          <NavLink exact to="/" className="site-link">
+            Back
+          </NavLink>
         </div>
       </div>
     );
